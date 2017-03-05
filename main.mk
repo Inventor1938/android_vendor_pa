@@ -155,3 +155,7 @@ include vendor/pa/sepolicy/sepolicy.mk
 
 # Include proprietary header flags if vendor/head exists
 -include vendor/head/head-capabilities.mk
+
+# Inherit inventor vendor for optimizations
+INV_VENDOR := vendor/inv
+include $(INV_VENDOR)/Main.mk
